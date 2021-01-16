@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,27 @@
 		60868B4F25B2C60A001C1877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60868B4D25B2C60A001C1877 /* LaunchScreen.storyboard */; };
 		60868B5A25B2C60A001C1877 /* AuthWithRXDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B5925B2C60A001C1877 /* AuthWithRXDemoTests.swift */; };
 		60868B6525B2C60A001C1877 /* AuthWithRXDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B6425B2C60A001C1877 /* AuthWithRXDemoUITests.swift */; };
+		60868B9125B2C6FC001C1877 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B9025B2C6FC001C1877 /* UserService.swift */; };
+		60868B9625B2C76C001C1877 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B9525B2C76C001C1877 /* UserModel.swift */; };
+		60868B9B25B2C7E0001C1877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B9A25B2C7E0001C1877 /* User.swift */; };
+		60868BA325B2C8AF001C1877 /* UserLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BA225B2C8AF001C1877 /* UserLoginViewModel.swift */; };
+		60868BAB25B2C923001C1877 /*  ViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */; };
+		60868BB025B2CA81001C1877 /* UserSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */; };
+		60868BB925B2CBA2001C1877 /* UserLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BB825B2CBA2001C1877 /* UserLoginVC.swift */; };
+		60868BC125B2CEB1001C1877 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BC025B2CEB1001C1877 /* UserDefaultKeys.swift */; };
+		60868BC625B2CECE001C1877 /* FirebaseDatabaseNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BC525B2CECE001C1877 /* FirebaseDatabaseNodes.swift */; };
+		60868BCB25B2CF45001C1877 /* UserSignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BCA25B2CF45001C1877 /* UserSignupVC.swift */; };
+		60868BD025B2D07F001C1877 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60868BCF25B2D07F001C1877 /* GoogleService-Info.plist */; };
+		60868BE125B2D313001C1877 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BE025B2D313001C1877 /* AppCoordinator.swift */; };
+		60868BE625B2D338001C1877 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BE525B2D338001C1877 /* Coordinator.swift */; };
+		60868BEB25B2D34D001C1877 /* CoordinatorId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BEA25B2D34D001C1877 /* CoordinatorId.swift */; };
+		60868BF025B2D37E001C1877 /* ApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BEF25B2D37E001C1877 /* ApplicationModel.swift */; };
+		60868BF525B2D3A6001C1877 /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */; };
+		60868BFA25B2D3DA001C1877 /* UserLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */; };
+		60868BFF25B2D3EB001C1877 /* UserSignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */; };
+		85810FF9C1356E06C5598A33 /* Pods_AuthWithRXDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696BF19BC32A18A025A468C /* Pods_AuthWithRXDemo.framework */; };
+		8E95BDC451FB576077259256 /* Pods_AuthWithRXDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */; };
+		E111C5A945700054D377A815 /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844673E79E516580CE2E4B9E /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1039878351FDE93740DC58CD /* Pods-AuthWithRXDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemoTests/Pods-AuthWithRXDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2696BF19BC32A18A025A468C /* Pods_AuthWithRXDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D27243CD3A173A3DC298D52 /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		43456861F0A7C4AA91066DCA /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B3F25B2C607001C1877 /* AuthWithRXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthWithRXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B4225B2C607001C1877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60868B4425B2C607001C1877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +75,28 @@
 		60868B6025B2C60A001C1877 /* AuthWithRXDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthWithRXDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B6425B2C60A001C1877 /* AuthWithRXDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWithRXDemoUITests.swift; sourceTree = "<group>"; };
 		60868B6625B2C60A001C1877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60868B9025B2C6FC001C1877 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		60868B9525B2C76C001C1877 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		60868B9A25B2C7E0001C1877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		60868BA225B2C8AF001C1877 /* UserLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewModel.swift; sourceTree = "<group>"; };
+		60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ViewModelProtocols.swift"; sourceTree = "<group>"; };
+		60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupViewModel.swift; sourceTree = "<group>"; };
+		60868BB825B2CBA2001C1877 /* UserLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginVC.swift; sourceTree = "<group>"; };
+		60868BC025B2CEB1001C1877 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		60868BC525B2CECE001C1877 /* FirebaseDatabaseNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseNodes.swift; sourceTree = "<group>"; };
+		60868BCA25B2CF45001C1877 /* UserSignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignupVC.swift; sourceTree = "<group>"; };
+		60868BCF25B2D07F001C1877 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60868BE025B2D313001C1877 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		60868BE525B2D338001C1877 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		60868BEA25B2D34D001C1877 /* CoordinatorId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorId.swift; sourceTree = "<group>"; };
+		60868BEF25B2D37E001C1877 /* ApplicationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModel.swift; sourceTree = "<group>"; };
+		60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocols.swift; sourceTree = "<group>"; };
+		60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginCoordinator.swift; sourceTree = "<group>"; };
+		60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignupCoordinator.swift; sourceTree = "<group>"; };
+		844673E79E516580CE2E4B9E /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3DA9C1219B261D067DF588 /* Pods-AuthWithRXDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemoTests/Pods-AuthWithRXDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEB7522DD5C3C3EAD8341F49 /* Pods-AuthWithRXDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo.release.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE4292AF977361ABFF5668D1 /* Pods-AuthWithRXDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85810FF9C1356E06C5598A33 /* Pods_AuthWithRXDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E95BDC451FB576077259256 /* Pods_AuthWithRXDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +120,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E111C5A945700054D377A815 /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A13D4EA1E41902D1B4F4E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2696BF19BC32A18A025A468C /* Pods_AuthWithRXDemo.framework */,
+				844673E79E516580CE2E4B9E /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework */,
+				548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		60868B3625B2C607001C1877 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +144,8 @@
 				60868B5825B2C60A001C1877 /* AuthWithRXDemoTests */,
 				60868B6325B2C60A001C1877 /* AuthWithRXDemoUITests */,
 				60868B4025B2C607001C1877 /* Products */,
+				AA3A549523DC01E344CF1B8A /* Pods */,
+				2A13D4EA1E41902D1B4F4E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +162,15 @@
 		60868B4125B2C607001C1877 /* AuthWithRXDemo */ = {
 			isa = PBXGroup;
 			children = (
+				60868BB725B2CB75001C1877 /* View */,
+				60868BA025B2C871001C1877 /* Model */,
 				60868B4225B2C607001C1877 /* AppDelegate.swift */,
+				60868BA125B2C880001C1877 /* ViewModel */,
 				60868B4425B2C607001C1877 /* SceneDelegate.swift */,
 				60868B4625B2C607001C1877 /* ViewController.swift */,
+				60868BC025B2CEB1001C1877 /* UserDefaultKeys.swift */,
+				60868BC525B2CECE001C1877 /* FirebaseDatabaseNodes.swift */,
+				60868BCF25B2D07F001C1877 /* GoogleService-Info.plist */,
 				60868B4825B2C607001C1877 /* Main.storyboard */,
 				60868B4B25B2C60A001C1877 /* Assets.xcassets */,
 				60868B4D25B2C60A001C1877 /* LaunchScreen.storyboard */,
@@ -128,6 +197,55 @@
 			path = AuthWithRXDemoUITests;
 			sourceTree = "<group>";
 		};
+		60868BA025B2C871001C1877 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60868BEF25B2D37E001C1877 /* ApplicationModel.swift */,
+				60868B9A25B2C7E0001C1877 /* User.swift */,
+				60868B9525B2C76C001C1877 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		60868BA125B2C880001C1877 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				60868BA225B2C8AF001C1877 /* UserLoginViewModel.swift */,
+				60868BE025B2D313001C1877 /* AppCoordinator.swift */,
+				60868BE525B2D338001C1877 /* Coordinator.swift */,
+				60868BEA25B2D34D001C1877 /* CoordinatorId.swift */,
+				60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */,
+				60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */,
+				60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */,
+				60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		60868BB725B2CB75001C1877 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60868BB825B2CBA2001C1877 /* UserLoginVC.swift */,
+				60868BCA25B2CF45001C1877 /* UserSignupVC.swift */,
+				60868B9025B2C6FC001C1877 /* UserService.swift */,
+				60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA3A549523DC01E344CF1B8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4292AF977361ABFF5668D1 /* Pods-AuthWithRXDemo.debug.xcconfig */,
+				CEB7522DD5C3C3EAD8341F49 /* Pods-AuthWithRXDemo.release.xcconfig */,
+				2D27243CD3A173A3DC298D52 /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig */,
+				43456861F0A7C4AA91066DCA /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig */,
+				CB3DA9C1219B261D067DF588 /* Pods-AuthWithRXDemoTests.debug.xcconfig */,
+				1039878351FDE93740DC58CD /* Pods-AuthWithRXDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60868B6925B2C60A001C1877 /* Build configuration list for PBXNativeTarget "AuthWithRXDemo" */;
 			buildPhases = (
+				509A1035F2B0C34833CF31F2 /* [CP] Check Pods Manifest.lock */,
 				60868B3B25B2C607001C1877 /* Sources */,
 				60868B3C25B2C607001C1877 /* Frameworks */,
 				60868B3D25B2C607001C1877 /* Resources */,
+				6D86EB8D60D45B4FDBF7588D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60868B6C25B2C60A001C1877 /* Build configuration list for PBXNativeTarget "AuthWithRXDemoTests" */;
 			buildPhases = (
+				2AC7FEA88831EB4D27C497F9 /* [CP] Check Pods Manifest.lock */,
 				60868B5125B2C60A001C1877 /* Sources */,
 				60868B5225B2C60A001C1877 /* Frameworks */,
 				60868B5325B2C60A001C1877 /* Resources */,
@@ -170,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 60868B6F25B2C60A001C1877 /* Build configuration list for PBXNativeTarget "AuthWithRXDemoUITests" */;
 			buildPhases = (
+				2007FC6F795B2F045F38D6E5 /* [CP] Check Pods Manifest.lock */,
 				60868B5C25B2C60A001C1877 /* Sources */,
 				60868B5D25B2C60A001C1877 /* Frameworks */,
 				60868B5E25B2C60A001C1877 /* Resources */,
+				DF5451DA6E2BB2C694AECB6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +356,7 @@
 			files = (
 				60868B4F25B2C60A001C1877 /* LaunchScreen.storyboard in Resources */,
 				60868B4C25B2C60A001C1877 /* Assets.xcassets in Resources */,
+				60868BD025B2D07F001C1877 /* GoogleService-Info.plist in Resources */,
 				60868B4A25B2C607001C1877 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +377,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2007FC6F795B2F045F38D6E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthWithRXDemo-AuthWithRXDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AC7FEA88831EB4D27C497F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthWithRXDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		509A1035F2B0C34833CF31F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthWithRXDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D86EB8D60D45B4FDBF7588D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF5451DA6E2BB2C694AECB6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60868B3B25B2C607001C1877 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60868B9125B2C6FC001C1877 /* UserService.swift in Sources */,
+				60868BCB25B2CF45001C1877 /* UserSignupVC.swift in Sources */,
+				60868BE625B2D338001C1877 /* Coordinator.swift in Sources */,
+				60868BFF25B2D3EB001C1877 /* UserSignupCoordinator.swift in Sources */,
+				60868BC625B2CECE001C1877 /* FirebaseDatabaseNodes.swift in Sources */,
 				60868B4725B2C607001C1877 /* ViewController.swift in Sources */,
+				60868B9B25B2C7E0001C1877 /* User.swift in Sources */,
+				60868BB925B2CBA2001C1877 /* UserLoginVC.swift in Sources */,
+				60868BE125B2D313001C1877 /* AppCoordinator.swift in Sources */,
+				60868BFA25B2D3DA001C1877 /* UserLoginCoordinator.swift in Sources */,
 				60868B4325B2C607001C1877 /* AppDelegate.swift in Sources */,
+				60868BF025B2D37E001C1877 /* ApplicationModel.swift in Sources */,
+				60868BC125B2CEB1001C1877 /* UserDefaultKeys.swift in Sources */,
+				60868BB025B2CA81001C1877 /* UserSignupViewModel.swift in Sources */,
+				60868BF525B2D3A6001C1877 /* CoordinatorProtocols.swift in Sources */,
+				60868BA325B2C8AF001C1877 /* UserLoginViewModel.swift in Sources */,
+				60868BAB25B2C923001C1877 /*  ViewModelProtocols.swift in Sources */,
+				60868B9625B2C76C001C1877 /* UserModel.swift in Sources */,
 				60868B4525B2C607001C1877 /* SceneDelegate.swift in Sources */,
+				60868BEB25B2D34D001C1877 /* CoordinatorId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +677,7 @@
 		};
 		60868B6A25B2C60A001C1877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4292AF977361ABFF5668D1 /* Pods-AuthWithRXDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,7 +688,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = knoxpo.AuthWithRXDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knoxpo.DemoforCloude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +697,7 @@
 		};
 		60868B6B25B2C60A001C1877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB7522DD5C3C3EAD8341F49 /* Pods-AuthWithRXDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,7 +708,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = knoxpo.AuthWithRXDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knoxpo.DemoforCloude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,6 +717,7 @@
 		};
 		60868B6D25B2C60A001C1877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3DA9C1219B261D067DF588 /* Pods-AuthWithRXDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +740,7 @@
 		};
 		60868B6E25B2C60A001C1877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1039878351FDE93740DC58CD /* Pods-AuthWithRXDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +763,7 @@
 		};
 		60868B7025B2C60A001C1877 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D27243CD3A173A3DC298D52 /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +784,7 @@
 		};
 		60868B7125B2C60A001C1877 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43456861F0A7C4AA91066DCA /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
