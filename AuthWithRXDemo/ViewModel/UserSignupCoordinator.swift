@@ -22,7 +22,7 @@ class UserSignupCoordinator: Coordinator {
         
         let signupVC = storyboard.instantiateViewController(withIdentifier: "UserSignupVC") as! UserSignupVC
         let signupViewModel = UserSignupViewModel()
-        signupViewModel.coordinate = self
+        signupViewModel.coordinatorDelegate = self
         signupViewModel.model = UserModel.sharedInstance
         signupVC.viewModel = signupViewModel
         

@@ -1,0 +1,6 @@
+framework module Pods_AuthWithRXDemo {
+  umbrella header "Pods-AuthWithRXDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

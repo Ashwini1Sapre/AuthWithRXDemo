@@ -22,7 +22,7 @@ class UserSignupVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.viewdelegate = self
+        viewModel?.viewDelegate = self
         
         setupView()
         bindView()
@@ -55,7 +55,9 @@ class UserSignupVC: UIViewController {
                         
                         self?.signupButton.isUserInteractionEnabled = true
                         self?.signupButton.alpha = 1.0
-                    } else {
+                    }
+                    else
+                    {
                         self?.signupButton.isUserInteractionEnabled = false
                         self?.signupButton.alpha = 0.6
                     }
@@ -80,7 +82,10 @@ extension UserSignupVC: UserSignupViewModelViewDelegate {
         
         let alert = UIAlertController(title: "User Signup", message: "Your app account is created. Please login with email and password!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] action in
+            self?.emailTextField.text = ""
+            self!.passwordTextField.text = ""
             alert.dismiss(animated: true, completion: nil)
+            
             self?.viewModel?.showUserLoginView()
         })
         present(alert, animated: true)

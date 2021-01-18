@@ -6,26 +6,20 @@
 //
 
 import Foundation
-class UserModel: NSObject
-{
+
+class UserModel: NSObject {
+    
     static var sharedInstance = UserModel()
     
-    
     override private init() {
-        
+        // Initializng UserModel
     }
     
-    
-    var user: User?
-    {
-        get{
-            
+    var user: User? {
+        get {
             return UserService.sharedInstance.user
         }
-        
     }
-    
-    
     
     func loginUserWith(email: String, password: String, completionHandler: @escaping (_:Bool) -> Void) {
         UserService.sharedInstance.loginUserWith(email: email, password: password) { didLogin, user in
@@ -39,4 +33,15 @@ class UserModel: NSObject
         }
     }
     
+    func logoutUser(completionHandler: @escaping (_:Bool) -> Void) {
+        UserService.sharedInstance.logoutUser { isLoggedOut in
+            completionHandler(isLoggedOut)
+        }
+    }
+    
+    func getLoggedinUserList(completionHandler: @escaping ([User]) -> Void) {
+        UserService.sharedInstance.getLoggedinUserList { users in
+            completionHandler(users)
+        }
+    }
 }

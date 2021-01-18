@@ -5,14 +5,17 @@
 //  Created by Knoxpo MacBook Pro on 16/01/21.
 //
 
-import UIKit
 import SVProgressHUD
 import RxSwift
 import RxCocoa
+import UIKit
+
 class UserLoginVC: UIViewController {
-    
+
     let bag = DisposeBag()
-    var viewModel: UserLoginViewModel?
+    var viewModel:UserLoginViewModel?
+    var window: UIWindow!
+    weak var delegate: UserSignupCoordinatorDelegate?
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -21,7 +24,8 @@ class UserLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.viewDelwgate = self
+       // viewModel?.viewDelegate = self
+        viewModel?.viewDelegate = self
         
         setupView()
         bindView()
@@ -47,7 +51,7 @@ class UserLoginVC: UIViewController {
                 if let email = userEmail, let password = userPassword {
                     if email.count > 0 && password.count > 0 {
                         self?.viewModel?.userEmail = email
-                        self?.viewModel?.password = password
+                        self?.viewModel?.userPassword = password
                         
                         self?.loginButton.isUserInteractionEnabled = true
                         self?.loginButton.alpha = 1.0
@@ -65,8 +69,15 @@ class UserLoginVC: UIViewController {
     }
     
     @IBAction func didClickOnSignupButton(_ sender: Any) {
+     //   viewModel?.showUserSignupView()
         viewModel?.showUserSignupView()
+       
+        
+        
     }
+    
+   
+    
 }
 
 extension UserLoginVC: UserLoginViewModelViewDelegate {
@@ -75,8 +86,10 @@ extension UserLoginVC: UserLoginViewModelViewDelegate {
         
         let alert = UIAlertController(title: "User Login", message: "Your login is successful!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] action in
+            self?.emailTextField.text = ""
+            self?.passwordTextField.text = "" 
             alert.dismiss(animated: true, completion: nil)
-            self?.viewModel?.showUserListView()
+          //  self?.viewModel?.showUserListView()
         })
         present(alert, animated: true)
     }

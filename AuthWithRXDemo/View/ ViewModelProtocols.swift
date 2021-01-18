@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 protocol UserLoginViewModelViewDelegate: class {
     func didCompleteUserLogin()
     func didUserLoginFail()

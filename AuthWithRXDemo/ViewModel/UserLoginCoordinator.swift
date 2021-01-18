@@ -22,7 +22,7 @@ class UserLoginCoordinator: Coordinator {
         
         let loginVC = storyboard.instantiateViewController(withIdentifier: "UserLoginVC") as! UserLoginVC
         let loginViewModel = UserLoginViewModel()
-        loginViewModel.coordinateDelegate = self
+        loginViewModel.coordinatorDelegate = self
         loginViewModel.model = UserModel.sharedInstance
         loginVC.viewModel = loginViewModel
         

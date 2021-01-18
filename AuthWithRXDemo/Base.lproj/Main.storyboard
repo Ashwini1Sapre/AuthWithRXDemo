@@ -60,7 +60,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickOnLoginButton:" destination="O2p-or-zAV" eventType="touchUpInside" id="QaW-WB-3eM"/>
+                                    <action selector="didClickOnLoginButton:" destination="O2p-or-zAV" eventType="touchUpInside" id="SGa-Sl-CeN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNr-D3-SC9">
@@ -71,7 +71,7 @@
                                 </constraints>
                                 <state key="normal" title="Signup"/>
                                 <connections>
-                                    <action selector="didClickOnSignupButton:" destination="O2p-or-zAV" eventType="touchUpInside" id="6d1-cb-6n3"/>
+                                    <action selector="didClickOnSignupButton:" destination="O2p-or-zAV" eventType="touchUpInside" id="Mh5-en-wSe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +110,7 @@
         <!--User SignupVC-->
         <scene sceneID="dnz-Cg-xCG">
             <objects>
-                <viewController storyboardIdentifier="UserSignupVC" id="2uv-fH-12W" customClass="UserSignupVC" customModule="RxChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserSignupVC" id="2uv-fH-12W" customClass="UserSignupVC" customModule="AuthWithRXDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="12Y-oU-eXh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="didClickOnSignupButton:" destination="2uv-fH-12W" eventType="touchUpInside" id="WXH-Kx-W98"/>
+                                    <action selector="didClickOnSignupButton:" destination="2uv-fH-12W" eventType="touchUpInside" id="aUJ-rE-UyF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg7-KK-jC5">

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60868B4325B2C607001C1877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B4225B2C607001C1877 /* AppDelegate.swift */; };
-		60868B4525B2C607001C1877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B4425B2C607001C1877 /* SceneDelegate.swift */; };
 		60868B4725B2C607001C1877 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B4625B2C607001C1877 /* ViewController.swift */; };
 		60868B4A25B2C607001C1877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60868B4825B2C607001C1877 /* Main.storyboard */; };
 		60868B4C25B2C60A001C1877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60868B4B25B2C60A001C1877 /* Assets.xcassets */; };
@@ -63,7 +62,6 @@
 		548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B3F25B2C607001C1877 /* AuthWithRXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthWithRXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B4225B2C607001C1877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60868B4425B2C607001C1877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		60868B4625B2C607001C1877 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		60868B4925B2C607001C1877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60868B4B25B2C60A001C1877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,14 +160,14 @@
 		60868B4125B2C607001C1877 /* AuthWithRXDemo */ = {
 			isa = PBXGroup;
 			children = (
-				60868BB725B2CB75001C1877 /* View */,
-				60868BA025B2C871001C1877 /* Model */,
-				60868B4225B2C607001C1877 /* AppDelegate.swift */,
-				60868BA125B2C880001C1877 /* ViewModel */,
-				60868B4425B2C607001C1877 /* SceneDelegate.swift */,
-				60868B4625B2C607001C1877 /* ViewController.swift */,
+				60868B9025B2C6FC001C1877 /* UserService.swift */,
 				60868BC025B2CEB1001C1877 /* UserDefaultKeys.swift */,
 				60868BC525B2CECE001C1877 /* FirebaseDatabaseNodes.swift */,
+				60868BA125B2C880001C1877 /* ViewModel */,
+				60868BA025B2C871001C1877 /* Model */,
+				60868BB725B2CB75001C1877 /* View */,
+				60868B4625B2C607001C1877 /* ViewController.swift */,
+				60868B4225B2C607001C1877 /* AppDelegate.swift */,
 				60868BCF25B2D07F001C1877 /* GoogleService-Info.plist */,
 				60868B4825B2C607001C1877 /* Main.storyboard */,
 				60868B4B25B2C60A001C1877 /* Assets.xcassets */,
@@ -225,10 +223,9 @@
 		60868BB725B2CB75001C1877 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */,
 				60868BB825B2CBA2001C1877 /* UserLoginVC.swift */,
 				60868BCA25B2CF45001C1877 /* UserSignupVC.swift */,
-				60868B9025B2C6FC001C1877 /* UserService.swift */,
-				60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,7 +500,6 @@
 				60868BA325B2C8AF001C1877 /* UserLoginViewModel.swift in Sources */,
 				60868BAB25B2C923001C1877 /*  ViewModelProtocols.swift in Sources */,
 				60868B9625B2C76C001C1877 /* UserModel.swift in Sources */,
-				60868B4525B2C607001C1877 /* SceneDelegate.swift in Sources */,
 				60868BEB25B2D34D001C1877 /* CoordinatorId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

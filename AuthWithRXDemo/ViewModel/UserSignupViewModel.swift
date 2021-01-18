@@ -6,31 +6,30 @@
 //
 
 import Foundation
-class  UserSignupViewModel: NSObject{
+class UserSignupViewModel: NSObject {
     
-    weak var viewdelegate: UserSignupViewModelViewDelegate?
-    weak var coordinate: UserSignupViewModelCoordinatorDelegate?
-   
+    weak var viewDelegate: UserSignupViewModelViewDelegate?
+    weak var coordinatorDelegate: UserSignupViewModelCoordinatorDelegate?
+    
     var model: UserModel?
     var userName: String?
     var userEmail: String?
     var password: String?
     
     func showUserLoginView() {
-        coordinate?.showUserLoginView()
+        coordinatorDelegate?.showUserLoginView()
     }
     
     func signupUser() {
         model?.signupUserWith(name: userName!, email: userEmail!, password: password!) { [weak self] didSignup in
             if didSignup == true {
-                self?.viewdelegate?.didCompleteUserSignup()
+                self?.viewDelegate?.didCompleteUserSignup()
             } else {
-                self?.viewdelegate?.didUserSignupFail()
+                self?.viewDelegate?.didUserSignupFail()
             }
         }
     }
 }
-    
     
     
 

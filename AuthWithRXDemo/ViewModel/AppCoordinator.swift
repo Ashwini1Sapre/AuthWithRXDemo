@@ -1,10 +1,4 @@
-//
-//  AppCoordinator.swift
-//  RxChat
-//
-//  Created by Prem Pratap Singh on 20/05/18.
-//  Copyright © 2018 Prem Pratap Singh. All rights reserved.
-//
+
 
 import UIKit
 
@@ -18,8 +12,8 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        if ApplicationModel.sharedInstance.isUserLoggedIn() {
-           // showUserListView()
+        if ApplicationModel.sharedInstanse.isUserLoggedIn() {
+           showUserLoginView()
         } else {
             showUserLoginView()
         }
@@ -42,6 +36,7 @@ extension AppCoordinator: UserLoginCoordinatorDelegate {
         userSignupCoordinator.start()
     }
     
+   
     func didCompleteUserLogin() {
         coordinators[.userLogin] = nil
        // showUserListView()
@@ -64,7 +59,7 @@ extension AppCoordinator: UserSignupCoordinatorDelegate {
 
 extension AppCoordinator: UserListCoordinatorDelegate {
     func showLoginViewAfterLogout() {
-        coordinators[.usersList] = nil
+       // coordinators[.usersList] = nil
         showUserLoginView()
     }
 }
