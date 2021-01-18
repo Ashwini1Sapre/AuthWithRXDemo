@@ -1,9 +1,4 @@
-//
-//   ViewModelProtocols.swift
-//  AuthWithRXDemo
-//
-//  Created by Knoxpo MacBook Pro on 16/01/21.
-//
+
 
 import Foundation
 
