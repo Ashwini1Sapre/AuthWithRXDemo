@@ -6,12 +6,13 @@ target 'AuthWithRXDemo' do
   use_frameworks!
 
   # Pods for AuthWithRXDemo
-pod 'Firebase/Core'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'SVProgressHUD'
+  pod 'Firebase/Firestore'
 
   target 'AuthWithRXDemoTests' do
     inherit! :search_paths

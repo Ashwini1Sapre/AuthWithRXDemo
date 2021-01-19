@@ -13,7 +13,7 @@ class AppCoordinator: Coordinator {
     
     func start() {
         if ApplicationModel.sharedInstanse.isUserLoggedIn() {
-           showUserLoginView()
+            showUserListView()
         } else {
             showUserLoginView()
         }
@@ -36,10 +36,27 @@ extension AppCoordinator: UserLoginCoordinatorDelegate {
         userSignupCoordinator.start()
     }
     
+    func showUserHOmeView() {
+        let userHomeCoordinator = UserLoginCoordinator(withWindow: window)
+        coordinators[.Home] = userHomeCoordinator
+        userHomeCoordinator.delegate = self
+        userHomeCoordinator.start()
+    }
+    
+    
+func showUserListView()
+{
+    let userListCoordinator = UserListCoordinator(withWindow: window)
+    coordinators[.userList] = userListCoordinator
+    userListCoordinator.delegate = self
+    userListCoordinator.start()
+    
+    
+}
    
     func didCompleteUserLogin() {
         coordinators[.userLogin] = nil
-       // showUserListView()
+        showUserListView()
     }
     
    

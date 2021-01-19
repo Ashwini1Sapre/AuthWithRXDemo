@@ -11,11 +11,12 @@ class UserLoginVC: UIViewController {
     var viewModel:UserLoginViewModel?
     var window: UIWindow!
     weak var delegate: UserSignupCoordinatorDelegate?
-    
+ //   var window: UIWindow!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+  //  var viewModel: UserSignupViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +72,13 @@ class UserLoginVC: UIViewController {
         
     }
     
-   
+//    @IBAction func didClickOnSignOutButton(_ sender: Any) {
+//     //   viewModel?.showUserSignupView()
+//      //  viewModel?.logoutUser()
+//
+//
+//
+//    }
     
 }
 
@@ -81,10 +88,12 @@ extension UserLoginVC: UserLoginViewModelViewDelegate {
         
         let alert = UIAlertController(title: "User Login", message: "Your login is successful!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] action in
-            self?.emailTextField.text = ""
-            self?.passwordTextField.text = "" 
-            alert.dismiss(animated: true, completion: nil)
-          //  self?.viewModel?.showUserListView()
+         
+//
+//            alert.dismiss(animated: true, completion: nil)
+            
+            self?.viewModel?.showUserListView()
+        
         })
         present(alert, animated: true)
     }
@@ -98,7 +107,8 @@ extension UserLoginVC: UserLoginViewModelViewDelegate {
         })
         present(alert, animated: true)
     }
-}
+    
+    }
 
 extension UserLoginVC: UITextFieldDelegate {
     

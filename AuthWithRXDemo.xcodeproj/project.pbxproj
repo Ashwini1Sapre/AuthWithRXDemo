@@ -32,6 +32,10 @@
 		60868BF525B2D3A6001C1877 /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */; };
 		60868BFA25B2D3DA001C1877 /* UserLoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */; };
 		60868BFF25B2D3EB001C1877 /* UserSignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */; };
+		60A12E6225B6BBE700B7C07E /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A12E6125B6BBE700B7C07E /* UserListCoordinator.swift */; };
+		60A12E6725B6C26300B7C07E /* ChatRoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A12E6625B6C26300B7C07E /* ChatRoomModel.swift */; };
+		60A12E6F25B6C39400B7C07E /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A12E6E25B6C39400B7C07E /* UserListViewModel.swift */; };
+		60A12E7425B6DCE600B7C07E /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A12E7325B6DCE600B7C07E /* UserListTableViewCell.swift */; };
 		85810FF9C1356E06C5598A33 /* Pods_AuthWithRXDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2696BF19BC32A18A025A468C /* Pods_AuthWithRXDemo.framework */; };
 		8E95BDC451FB576077259256 /* Pods_AuthWithRXDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */; };
 		E111C5A945700054D377A815 /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844673E79E516580CE2E4B9E /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework */; };
@@ -91,6 +95,10 @@
 		60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocols.swift; sourceTree = "<group>"; };
 		60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginCoordinator.swift; sourceTree = "<group>"; };
 		60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignupCoordinator.swift; sourceTree = "<group>"; };
+		60A12E6125B6BBE700B7C07E /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
+		60A12E6625B6C26300B7C07E /* ChatRoomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomModel.swift; sourceTree = "<group>"; };
+		60A12E6E25B6C39400B7C07E /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		60A12E7325B6DCE600B7C07E /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		844673E79E516580CE2E4B9E /* Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemo_AuthWithRXDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3DA9C1219B261D067DF588 /* Pods-AuthWithRXDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemoTests/Pods-AuthWithRXDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEB7522DD5C3C3EAD8341F49 /* Pods-AuthWithRXDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo.release.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo/Pods-AuthWithRXDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +174,6 @@
 				60868BA125B2C880001C1877 /* ViewModel */,
 				60868BA025B2C871001C1877 /* Model */,
 				60868BB725B2CB75001C1877 /* View */,
-				60868B4625B2C607001C1877 /* ViewController.swift */,
 				60868B4225B2C607001C1877 /* AppDelegate.swift */,
 				60868BCF25B2D07F001C1877 /* GoogleService-Info.plist */,
 				60868B4825B2C607001C1877 /* Main.storyboard */,
@@ -199,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				60868BEF25B2D37E001C1877 /* ApplicationModel.swift */,
+				60A12E6625B6C26300B7C07E /* ChatRoomModel.swift */,
 				60868B9A25B2C7E0001C1877 /* User.swift */,
 				60868B9525B2C76C001C1877 /* UserModel.swift */,
 			);
@@ -209,13 +217,15 @@
 			isa = PBXGroup;
 			children = (
 				60868BA225B2C8AF001C1877 /* UserLoginViewModel.swift */,
+				60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */,
+				60A12E6E25B6C39400B7C07E /* UserListViewModel.swift */,
 				60868BE025B2D313001C1877 /* AppCoordinator.swift */,
 				60868BE525B2D338001C1877 /* Coordinator.swift */,
 				60868BEA25B2D34D001C1877 /* CoordinatorId.swift */,
 				60868BF425B2D3A6001C1877 /* CoordinatorProtocols.swift */,
 				60868BFE25B2D3EB001C1877 /* UserSignupCoordinator.swift */,
 				60868BF925B2D3DA001C1877 /* UserLoginCoordinator.swift */,
-				60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */,
+				60A12E6125B6BBE700B7C07E /* UserListCoordinator.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,8 +234,10 @@
 			isa = PBXGroup;
 			children = (
 				60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */,
+				60A12E7325B6DCE600B7C07E /* UserListTableViewCell.swift */,
 				60868BB825B2CBA2001C1877 /* UserLoginVC.swift */,
 				60868BCA25B2CF45001C1877 /* UserSignupVC.swift */,
+				60868B4625B2C607001C1877 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,13 +495,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				60868B9125B2C6FC001C1877 /* UserService.swift in Sources */,
+				60A12E6F25B6C39400B7C07E /* UserListViewModel.swift in Sources */,
 				60868BCB25B2CF45001C1877 /* UserSignupVC.swift in Sources */,
+				60A12E6725B6C26300B7C07E /* ChatRoomModel.swift in Sources */,
 				60868BE625B2D338001C1877 /* Coordinator.swift in Sources */,
+				60A12E7425B6DCE600B7C07E /* UserListTableViewCell.swift in Sources */,
 				60868BFF25B2D3EB001C1877 /* UserSignupCoordinator.swift in Sources */,
 				60868BC625B2CECE001C1877 /* FirebaseDatabaseNodes.swift in Sources */,
 				60868B4725B2C607001C1877 /* ViewController.swift in Sources */,
 				60868B9B25B2C7E0001C1877 /* User.swift in Sources */,
 				60868BB925B2CBA2001C1877 /* UserLoginVC.swift in Sources */,
+				60A12E6225B6BBE700B7C07E /* UserListCoordinator.swift in Sources */,
 				60868BE125B2D313001C1877 /* AppCoordinator.swift in Sources */,
 				60868BFA25B2D3DA001C1877 /* UserLoginCoordinator.swift in Sources */,
 				60868B4325B2C607001C1877 /* AppDelegate.swift in Sources */,
