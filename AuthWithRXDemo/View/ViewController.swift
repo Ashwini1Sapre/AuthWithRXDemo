@@ -62,7 +62,7 @@ class ViewController: UIViewController {
             self.user = logguser
             
            // self.viewModel1?.handelDoneTapped()
-           self.viewModel2?.subscribe()
+          // self.viewModel2?.subscribe()
             self.UserTable.reloadData()
         }
         

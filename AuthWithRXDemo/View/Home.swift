@@ -61,47 +61,47 @@ class Home: UIViewController {
     {
         
         self.viewmodel?.handelDoneTapped()
-//        guard let name = nameTextFieild.text , !name.isEmpty else {
-//            return
-//        }
-//
-//        guard let email = emailTextField.text , !email.isEmpty else {
-//            return
-//        }
-//
-//        let datasave : [String: Any] = ["name" : name , "email" : email]
-//        docref.setData(datasave) { (error) in
-//            if error != nil
-//            {
-//                print("error")
-//            }
-//            else
-//            {
-//                print("Save")
-//
-//
-//                let alert = UIAlertController(title: "Add Succesfully", message: "", preferredStyle: .alert)
-//          alert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] action in
-//
-//          //  self?.fetchData()
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let app = UIApplication.shared.delegate as! AppDelegate
-//            let  viewpass = storyboard.instantiateViewController(identifier: "ViewController") as!
-//                ViewController
-//            app.window!.rootViewController = viewpass
-//
-//       // alert.dismiss(animated: true, completion: nil)
-//
-//
-//                })
-//                self.present(alert, animated: true)
-//
-//            }
-//
-//
-//
-//        }
-//
+        guard let name = nameTextFieild.text , !name.isEmpty else {
+            return
+        }
+        
+        guard let email = emailTextField.text , !email.isEmpty else {
+            return
+        }
+        
+        let datasave : [String: Any] = ["name" : name , "email" : email]
+        docref.setData(datasave) { (error) in
+            if error != nil
+            {
+                print("error")
+            }
+            else
+            {
+                print("Save")
+                
+                
+                let alert = UIAlertController(title: "Add Succesfully", message: "", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] action in
+        
+          //  self?.fetchData()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let app = UIApplication.shared.delegate as! AppDelegate
+            let  viewpass = storyboard.instantiateViewController(identifier: "ViewController") as!
+                ViewController
+            app.window!.rootViewController = viewpass
+            
+       // alert.dismiss(animated: true, completion: nil)
+                    
+                    
+                })
+                self.present(alert, animated: true)
+            
+            }
+            
+            
+            
+        }
+        
         
         
         
