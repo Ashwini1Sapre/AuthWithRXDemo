@@ -14,6 +14,8 @@ target 'AuthWithRXDemo' do
   pod 'SVProgressHUD'
   pod 'Firebase/Firestore'
 
+  pod 'FirebaseFirestoreSwift', '~> 7.0-beta'
+
   target 'AuthWithRXDemoTests' do
     inherit! :search_paths
     # Pods for testing

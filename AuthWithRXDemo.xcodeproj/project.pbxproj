@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		607E2FE125B8040700124379 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E2FE025B8040700124379 /* Home.swift */; };
+		607E300525B8419200124379 /* User1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E300425B8419200124379 /* User1.swift */; };
+		607E300D25B846FD00124379 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E300C25B846FD00124379 /* UserViewModel.swift */; };
+		607E301225B84D8900124379 /* UsersViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607E301125B84D8900124379 /* UsersViewModels.swift */; };
 		60868B4325B2C607001C1877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B4225B2C607001C1877 /* AppDelegate.swift */; };
 		60868B4725B2C607001C1877 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60868B4625B2C607001C1877 /* ViewController.swift */; };
 		60868B4A25B2C607001C1877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60868B4825B2C607001C1877 /* Main.storyboard */; };
@@ -64,6 +68,10 @@
 		2D27243CD3A173A3DC298D52 /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		43456861F0A7C4AA91066DCA /* Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-AuthWithRXDemo-AuthWithRXDemoUITests/Pods-AuthWithRXDemo-AuthWithRXDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		548C46447E0EFF28D1B734F5 /* Pods_AuthWithRXDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthWithRXDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		607E2FE025B8040700124379 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		607E300425B8419200124379 /* User1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User1.swift; sourceTree = "<group>"; };
+		607E300C25B846FD00124379 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		607E301125B84D8900124379 /* UsersViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModels.swift; sourceTree = "<group>"; };
 		60868B3F25B2C607001C1877 /* AuthWithRXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthWithRXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60868B4225B2C607001C1877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60868B4625B2C607001C1877 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +216,7 @@
 				60868BEF25B2D37E001C1877 /* ApplicationModel.swift */,
 				60A12E6625B6C26300B7C07E /* ChatRoomModel.swift */,
 				60868B9A25B2C7E0001C1877 /* User.swift */,
+				607E300425B8419200124379 /* User1.swift */,
 				60868B9525B2C76C001C1877 /* UserModel.swift */,
 			);
 			path = Model;
@@ -217,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				60868BA225B2C8AF001C1877 /* UserLoginViewModel.swift */,
+				607E300C25B846FD00124379 /* UserViewModel.swift */,
+				607E301125B84D8900124379 /* UsersViewModels.swift */,
 				60868BAF25B2CA81001C1877 /* UserSignupViewModel.swift */,
 				60A12E6E25B6C39400B7C07E /* UserListViewModel.swift */,
 				60868BE025B2D313001C1877 /* AppCoordinator.swift */,
@@ -236,6 +247,7 @@
 				60868BAA25B2C923001C1877 /*  ViewModelProtocols.swift */,
 				60A12E7325B6DCE600B7C07E /* UserListTableViewCell.swift */,
 				60868BB825B2CBA2001C1877 /* UserLoginVC.swift */,
+				607E2FE025B8040700124379 /* Home.swift */,
 				60868BCA25B2CF45001C1877 /* UserSignupVC.swift */,
 				60868B4625B2C607001C1877 /* ViewController.swift */,
 			);
@@ -494,6 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				607E301225B84D8900124379 /* UsersViewModels.swift in Sources */,
+				607E300525B8419200124379 /* User1.swift in Sources */,
 				60868B9125B2C6FC001C1877 /* UserService.swift in Sources */,
 				60A12E6F25B6C39400B7C07E /* UserListViewModel.swift in Sources */,
 				60868BCB25B2CF45001C1877 /* UserSignupVC.swift in Sources */,
@@ -502,6 +516,7 @@
 				60A12E7425B6DCE600B7C07E /* UserListTableViewCell.swift in Sources */,
 				60868BFF25B2D3EB001C1877 /* UserSignupCoordinator.swift in Sources */,
 				60868BC625B2CECE001C1877 /* FirebaseDatabaseNodes.swift in Sources */,
+				607E300D25B846FD00124379 /* UserViewModel.swift in Sources */,
 				60868B4725B2C607001C1877 /* ViewController.swift in Sources */,
 				60868B9B25B2C7E0001C1877 /* User.swift in Sources */,
 				60868BB925B2CBA2001C1877 /* UserLoginVC.swift in Sources */,
@@ -516,6 +531,7 @@
 				60868BA325B2C8AF001C1877 /* UserLoginViewModel.swift in Sources */,
 				60868BAB25B2C923001C1877 /*  ViewModelProtocols.swift in Sources */,
 				60868B9625B2C76C001C1877 /* UserModel.swift in Sources */,
+				607E2FE125B8040700124379 /* Home.swift in Sources */,
 				60868BEB25B2D34D001C1877 /* CoordinatorId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

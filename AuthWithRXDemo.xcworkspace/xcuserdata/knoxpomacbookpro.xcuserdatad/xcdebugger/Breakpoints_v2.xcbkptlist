@@ -7,266 +7,298 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D2BAE867-F641-40EF-A4D0-1684167FA53B"
+            uuid = "C8BD44FB-1972-4900-ACE3-8DDFDC716582"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/UserService.swift"
+            filePath = "AuthWithRXDemo/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "signupUserWith(name:email:password:completionHandler:)"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "bindview()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F09326DA-59C6-4E86-85AB-B8CB6331143F"
+            uuid = "5188A873-B548-47DA-8E5C-A60C56E2608F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/View/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
+            landmarkName = "didClickOnAdd(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D692611-E051-46AC-94DE-415249F73C02"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/View/UserLoginVC.swift"
+            filePath = "AuthWithRXDemo/View/Home.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "AddButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D4EF5BE-272C-42C8-A50F-489BE9B5F2C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/View/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "bindview()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0EAAF0D-6043-48E1-9CB5-024DC78548CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "handelDoneTapped()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECAF5702-A5B9-448B-8D2E-B41CC9113199"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "75"
             endingLineNumber = "75"
-            landmarkName = "UserLoginVC"
+            landmarkName = "updateOrAddBook()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73A1874A-EEC2-4E64-A310-EC3B5719B965"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "subscribe()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D51062B-6721-4C2B-B400-7ABADA108D11"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "UsersViewModels"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4D51062B-6721-4C2B-B400-7ABADA108D11 - 1a438c7329d1ddc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AuthWithRXDemo.UsersViewModels.__allocating_init() -&gt; AuthWithRXDemo.UsersViewModels"
+                  moduleName = "AuthWithRXDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "7">
+               </Location>
+               <Location
+                  uuid = "4D51062B-6721-4C2B-B400-7ABADA108D11 - 34cc84a0a62194c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AuthWithRXDemo.UsersViewModels.init() -&gt; AuthWithRXDemo.UsersViewModels"
+                  moduleName = "AuthWithRXDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E887ACA-33E4-4C67-8B7F-D9820D3C696C"
+            uuid = "8866997E-8209-432B-859B-D8199F5CA4DD"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/View/UserLoginVC.swift"
+            filePath = "AuthWithRXDemo/ViewModel/UserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "UserLoginVC"
-            landmarkType = "21">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "59EE9895-0ADD-4BA8-A52E-63061728BDAC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/UserLoginViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "UserLoginViewModel"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E7820102-0CF2-4342-9A5A-515B0F2AC429"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/UserService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "logoutUser(completionHandler:)"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "handelDoneTapped()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B1989C31-795F-4BF1-8672-19A62957C588"
+            uuid = "8CD2EB07-5778-450D-8673-0725972C877E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/Model/UserModel.swift"
+            filePath = "AuthWithRXDemo/ViewModel/UserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "logoutUser(completionHandler:)"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "updateOrAddBook()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "008D2AC5-EC35-4962-B57C-885F9367E874"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/View/UserLoginVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "didUserLoginFail()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9C0B49B3-CB10-4BB8-8151-8FFA8E12ED7A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "didClickOnLogoutButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2635B6E8-0133-4B4C-A606-FF7A1511B07E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/View/UserLoginVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "didCompleteUserLogin()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C6E53A3E-B459-4794-8A71-0DEE204C9B94"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "showUserListView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9BBEA328-5A94-450C-A6A8-B8899C21F3F8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/UserLoginViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "showUserListView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "555EADE7-00B3-489B-B389-6A0B74478440"
+            uuid = "29490A37-2D6E-4D33-921D-B27FC119EC4D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AuthWithRXDemo/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FFCD09B1-6849-45A8-AA49-8E7C7880771A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/UserListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "logoutUser()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "996259B0-3F13-4FD1-A7E7-6CD0A642B246"
+            uuid = "2F5BF657-6EC3-4142-896F-F947E389288E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AuthWithRXDemo/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "didClickOnLogoutButton(_:)"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EF2A21D0-C681-4FF1-8983-8B8A7B9B38DD"
-            shouldBeEnabled = "No"
+            uuid = "7A50DCD5-3FF6-47F7-B708-48D8B3A0516A"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/UserListCoordinator.swift"
+            filePath = "AuthWithRXDemo/ViewModel/UsersViewModels.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "UserListCoordinator"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD102C8E-0F47-4BB6-B707-41914A5C71A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "deinit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E99158E-B610-4820-8FE0-2D2B60465B7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AuthWithRXDemo/ViewModel/UsersViewModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "UsersViewModels"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "EF2A21D0-C681-4FF1-8983-8B8A7B9B38DD - 34683f535cc1c6c2"
+                  uuid = "0E99158E-B610-4820-8FE0-2D2B60465B7F - 916d1a2f82ad718"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.UserListCoordinator.deinit"
+                  symbolName = "AuthWithRXDemo.UsersViewModels.deinit"
                   moduleName = "AuthWithRXDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UserListCoordinator.swift"
+                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UsersViewModels.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
-                  uuid = "EF2A21D0-C681-4FF1-8983-8B8A7B9B38DD - 8dfaca7d36099fed"
+                  uuid = "0E99158E-B610-4820-8FE0-2D2B60465B7F - c949a59b5911e71f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.UserListCoordinator.__deallocating_deinit"
+                  symbolName = "AuthWithRXDemo.UsersViewModels.__deallocating_deinit"
                   moduleName = "AuthWithRXDemo"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UserListCoordinator.swift"
+                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/UsersViewModels.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -279,113 +311,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6BF2E955-A44F-483C-A10B-0C25DF0E51EF"
+            uuid = "6A86F1DC-F59E-475E-8E37-946B458AFADC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/AppCoordinator.swift"
+            filePath = "AuthWithRXDemo/View/Home.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "start()"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "AddButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B21CA343-CC81-49CC-8625-9701205D4ED1"
+            uuid = "2C68C1D9-8E33-4B9F-B240-DE491F1AA88C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/AppCoordinator.swift"
+            filePath = "AuthWithRXDemo/ViewModel/UserViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "5"
-            endingLineNumber = "5"
-            landmarkName = "AppCoordinator"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "B21CA343-CC81-49CC-8625-9701205D4ED1 - 9bd5252301cc1347"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.AppCoordinator.deinit"
-                  moduleName = "AuthWithRXDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "B21CA343-CC81-49CC-8625-9701205D4ED1 - a53dd507e0ba29ba"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.AppCoordinator.__deallocating_deinit"
-                  moduleName = "AuthWithRXDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "01519789-0DCA-48B9-8E4A-A6B1C02A4690"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
-            landmarkName = "init(withWindow:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "addBook(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "01519789-0DCA-48B9-8E4A-A6B1C02A4690 - 940cd9c784cd8ab0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.AppCoordinator.__allocating_init(withWindow: __C.UIWindow) -&gt; AuthWithRXDemo.AppCoordinator"
-                  moduleName = "AuthWithRXDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "21">
-               </Location>
-               <Location
-                  uuid = "01519789-0DCA-48B9-8E4A-A6B1C02A4690 - dca62013a38a85af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AuthWithRXDemo.AppCoordinator.init(withWindow: __C.UIWindow) -&gt; AuthWithRXDemo.AppCoordinator"
-                  moduleName = "AuthWithRXDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/knoxpomacbookpro/Desktop/AuthWithRXDemo/AuthWithRXDemo/ViewModel/AppCoordinator.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "7"
-                  endingLineNumber = "7"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

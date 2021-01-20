@@ -11,23 +11,66 @@ import SVProgressHUD
 import Firebase
 import FirebaseFirestore
 class ViewController: UIViewController {
+    
+    
    // let bag = DisposeBag()
     
     @IBOutlet weak var UserTable: UITableView!
     private let bag = DisposeBag()
     var viewModel = UserListViewModel()
     fileprivate var user = [User]()
-    
+    var window: UIWindow!
+    weak var delegate: UserSignupCoordinatorDelegate?
+    var viewModel1: UserViewModel?
+    var viewModel2: UsersViewModels?
     var docref : DocumentReference!
     override func viewDidLoad() {
         super.viewDidLoad()
-        docref = Firestore.firestore().document("Auth/item")
+        
+        docref = Firestore.firestore().document("Auth/Item")
         viewModel.viewDelegate = self
         setup()
+        
+        fetchData()
         bindview()
         loadUser()
         // Do any additional setup after loading the view.
     }
+    
+    func fetchData()
+    {
+        docref.getDocument { (snapshot,error) in
+            
+            guard let snapshot = snapshot , snapshot.exists else { return }
+            
+            let data = snapshot.data()
+            
+            let name = data?["name"] as? String ?? ""
+            let email = data?["email"] as? String ?? ""
+            
+            print("\(name) have \(email)")
+            
+            
+            
+           // print("\(User())")
+            var logguser = [User]()
+            logguser.append(User(name: name, email: email))
+           // logguser.append(User(name: "Tom", email: "tom@gmail.com"))
+           // logguser.append(User(name: "swan", email: "s@gmail.com"))
+            
+            
+            self.user = logguser
+            
+           // self.viewModel1?.handelDoneTapped()
+           self.viewModel2?.subscribe()
+            self.UserTable.reloadData()
+        }
+        
+        
+        
+    }
+    
+    
 
     private func setup()
     {
@@ -40,23 +83,9 @@ class ViewController: UIViewController {
     {
         viewModel.userObservable.subscribe(onNext: { [weak self] user in
             self?.user = user
-           
             
-           // let dataToSave : [String: Any] = ["name": name, "profession": profession]
-//            docref.setData(self?.user ?? default value) { (error) in
-//
-//                if let error = error
-//                {
-//                    print("error")
-//                }
-//                else{
-//                    print("data save")
-//
-//                }
-//
-//
-//            }
-            self!.UserTable.reloadData()
+            print("\(String(describing: self?.user))")
+           self!.UserTable.reloadData()
             
         })
         .disposed(by: bag)
@@ -68,6 +97,19 @@ class ViewController: UIViewController {
     private func loadUser()
     {
         viewModel.showonlineuser()
+        
+    }
+    
+    @IBAction func didClickOnAdd(_ sender: Any)
+    {
+    
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let appp = UIApplication.shared.delegate as! AppDelegate
+        let signupVC = storyboard.instantiateViewController(withIdentifier: "Home") as! Home
+    
+        appp.window!.rootViewController = signupVC
+        
         
     }
     
@@ -144,11 +186,7 @@ extension ViewController: UserListViewModelViewDelegate {
         present(alert, animated: true)
         
         
-//        alert.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] action in
-//            alert.dismiss(animated: true, completion: nil)
-//            self?.viewModel?.showUserLoginView()
-//        })
-//        present(alert, animated: true)
+
         
     }
     
@@ -156,10 +194,10 @@ extension ViewController: UserListViewModelViewDelegate {
     func didLogutFailed()
     {
         SVProgressHUD.dismiss()
-        let alert = UIAlertController(title: "User Logot Fail",message: "" ,preferredStyle: .alert)
+        let alert = UIAlertController(title: "User Logout Fail",message: "" ,preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK",style: .default){ [weak self] action in
             alert.dismiss(animated: true,completion: nil)
-           // self?.viewModel?.sh
+          
             
             
             
