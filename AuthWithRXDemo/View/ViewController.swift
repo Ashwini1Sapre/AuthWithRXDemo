@@ -23,7 +23,12 @@ class ViewController: UIViewController {
     weak var delegate: UserSignupCoordinatorDelegate?
     var viewModel1: UserViewModel?
     var viewModel2: UsersViewModels?
+    var viewmodelnew = UserViewModel()
+   var viewModelold = UserViewModel()
     var docref : DocumentReference!
+    private var db = Firestore.firestore()
+    var array : [String] = []
+  // var varrr : User1
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,8 +37,62 @@ class ViewController: UIViewController {
         setup()
         
         fetchData()
+        
+        
+        db.collection("Auth").getDocuments { (snapshot,error) in
+            if error != nil{
+                
+                print("\(String(describing: error))")
+                
+                
+            }
+            else
+            {
+                for document in (snapshot?.documents)! {
+                    
+                    if let name = document.data()["name"] as? String {
+                        
+                        self.array.append(name)
+                        self.UserTable.reloadData()
+                        
+                    }
+                    
+                    
+                }
+                
+                
+                
+            }
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
         bindview()
         loadUser()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -60,6 +119,9 @@ class ViewController: UIViewController {
             
             
             self.user = logguser
+            print("adddd listt,\(String(describing: self.viewModel2?.userlists))")
+            self.viewModel2?.subscribe()
+        
             
            // self.viewModel1?.handelDoneTapped()
           // self.viewModel2?.subscribe()
@@ -124,6 +186,13 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
+    func handelDelete()
+    {
+       
+      //  db.collection("Auth").document(viewModel1.userlist.id).delete()
+        
+        viewModelold.handelDeleteTapped()
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int{
         return 1
@@ -134,7 +203,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     {
         print("\(self.user)")
         print("\(self.user.count)")
-        return self.user.count
+        return self.array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -142,16 +211,63 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "UserListTableViewCell") as? UserListTableViewCell {
             
-            let user1 = user[indexPath.row]
-            cell.setUpView(user: user1)
+            let user1 = array[indexPath.row]
+          //  cell.setUpView(user: user1)
+            
+            cell.nameLabel.text = user1
             return cell
         }
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+       // db.collection("Auth").
+        
+       // viewModel2?.removeItem(atoffsets: indexPath)
+        
+        
+        viewmodelnew.handelDeleteTapped()
+        
+        handelDelete()
+        db.collection("Auth").document("Item").delete()
+        
+      //  db.collection("Auth").document(viewmodelnew.userlist.id ?? "sagar").delete()
+        
+        db.collection("Auth").document(viewmodelnew.userlist.id ?? "sagar").delete() { (error) in
+            
+            if let error = error{
+                
+                print(error.localizedDescription)
+                
+            }
+            
+            
+            
+        }
+
+        array.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
     
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+        
+        
     
+    }
     
     
     

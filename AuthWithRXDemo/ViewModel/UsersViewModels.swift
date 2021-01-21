@@ -71,9 +71,11 @@ class UsersViewModels: ObservableObject
                     return
                 }
                 self.userlists = documents.compactMap { queryDocumentSnapshot in
-                    try? queryDocumentSnapshot.data(as: User1.self)
+                 
+                    print("\(self.userlists)")
+                    return try? queryDocumentSnapshot.data(as: User1.self)
                     
-                    
+                 
                     
                     
                     
@@ -97,4 +99,44 @@ class UsersViewModels: ObservableObject
         
     }
     
-}
+    
+    func removeItem(atoffsets indexSet:IndexSet)
+    {
+        
+        let books = indexSet.lazy.map { self.userlists[$0] }
+        books.forEach { book in
+            if let documentId = book.id {
+                
+                db.collection("Auth").document(documentId).delete { error in
+                    
+                   if let error = error
+                   {
+                    print(error.localizedDescription)
+                    
+                   }
+                    
+                }
+                
+            }
+            
+            
+            
+        }
+        
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+    }
+   
+    
+    
+    
+

@@ -39,10 +39,11 @@ class UserViewModel: ObservableObject {
    
     
     ///add book
-   private func addBook(_ book: User1){
+   private func addBook(_ userlist: User1){
    do {
-    
-    let _ = try db.collection("Auth").addDocument(from: book)
+    print("\(userlist)")
+    //  let datasave : [String: Any] = ["name" : name , "email" : email]
+    let _ = try db.collection("Auth").addDocument(from: userlist)
         
     }
    catch{
@@ -51,6 +52,10 @@ class UserViewModel: ObservableObject {
    }
     
     }
+    
+   
+    
+    
     //update book
     private func updateBook(_ book: User1)
     {
@@ -67,6 +72,45 @@ class UserViewModel: ObservableObject {
         
         
     }
+    }
+    
+    
+    
+    func deleteBook()
+    {
+      //  print("\(userlist.id)")
+        if let documentId = userlist.id
+        
+      //  print(documentId)
+        
+        {
+            db.collection("Auth").document(documentId).delete { (error) in
+                
+                if let error = error
+                {
+                    
+                    print("error is \(error.localizedDescription)")
+                    
+                    
+                    
+                }
+                else{
+                    
+                    
+                    print("delete successfully")
+                    
+                }
+                
+                
+                
+            }
+            
+            
+        }
+        
+        
+        
+        
     }
     
     
@@ -109,9 +153,11 @@ class UserViewModel: ObservableObject {
         
     }
     
+    
+    
     func handelDeleteTapped() {
         
-       // self.deleteBook()
+        self.deleteBook()
     }
     
     

@@ -17,7 +17,9 @@ class Home: UIViewController {
     
     var docref : DocumentReference!
     
-    var viewmodel : UserViewModel?
+ var viewmodel = UserViewModel()
+    
+ //   @ObservedObject var viewModel = BookViewModel()
     //@Published var USERlist: Use
     private var db = Firestore.firestore()
     override func viewDidLoad() {
@@ -54,14 +56,53 @@ class Home: UIViewController {
     }
     
     
+    func handleDoneTapped() {
+        viewmodel.handelDoneTapped()
+     // self.dismiss()
+    }
+    
+    
+    func handelUPDATETAPPED()
+    {
+        viewmodel.handelDoneTapped()
+        
+    }
+    
+    func handelDeleteTaopped()
+    {
+        
+        
+        
+        viewmodel.handelDeleteTapped()
+    }
+    
+    
+    
+    
+    @IBAction func EditAction(_ sender: Any)
+    {
+        
+        
+        
+        self.handleDoneTapped()
+        
+        
+        
+        
+        
+    }
+    
+    
     
     
     
     @IBAction  func AddButton(_ sender: Any)
     {
         
-        self.viewmodel?.handelDoneTapped()
-        guard let name = nameTextFieild.text , !name.isEmpty else {
+        
+        guard let name = nameTextFieild.text , !name.isEmpty
+   // print("\(self.viewmodel.userlist.name)")
+        else {
             return
         }
         
@@ -69,16 +110,22 @@ class Home: UIViewController {
             return
         }
         
-        let datasave : [String: Any] = ["name" : name , "email" : email]
-        docref.setData(datasave) { (error) in
-            if error != nil
-            {
-                print("error")
-            }
-            else
-            {
-                print("Save")
-                
+      
+        self.viewmodel.userlist.name = name
+        self.viewmodel.userlist.pos = email
+        self.handleDoneTapped()
+        
+      //  let datasave : [String: Any] = ["name" :  self.viewmodel.userlist.name , "email" : self.viewmodel.userlist.pos]
+       // docref.setData(datasave) { (error) in
+//            if error != nil
+//            {
+//                print("error")
+//            }
+//            else
+//            {
+//                print("Save")
+//
+           
                 
                 let alert = UIAlertController(title: "Add Succesfully", message: "", preferredStyle: .alert)
           alert.addAction(UIAlertAction(title: "OK", style: .default) { [weak self] action in
@@ -90,17 +137,19 @@ class Home: UIViewController {
                 ViewController
             app.window!.rootViewController = viewpass
             
+          //  self?.handelDeleteTaopped()
+            
        // alert.dismiss(animated: true, completion: nil)
                     
                     
                 })
                 self.present(alert, animated: true)
             
-            }
+           // }
             
             
             
-        }
+       // }
         
         
         
